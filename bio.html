@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black; color: white;">
+    <center>
+        <nav style="text-align: center;">
+            <div class="wrapper">
+                BIODATA
+                <button class="button" style="width: 100px; height: 40px; margin-left: 1000px;"><a href="index.html">HOME</a></button>
+                <button class="button" style="width: 110px; height: 40px;"><a href="me.html">ABOUT_ME</a></button>
+                <button class="button" style="width: 100px; height: 40px;"><a href="hobby.html">HOBBY</a></button>
+            </div>           
+        </nav>
+        <table style="width: auto;">
+                <td style="width: auto;">
+                    <div class="container">
+                        <h1>Biodata Diri Saya</h1>
+                        <img src="https://krs.umy.ac.id/WebAPI/FotoMhs/GetFotoByNIM/20220140075/EF6B2C87298DB05ABF9EAD9CCB92B0C11F0C1D2579E9A0BF60941731DDF9068C" alt="Foto Profil">
+                        <div class="details" style="margin-top: 30%;">
+                            <p><strong>Nama:</strong> Muhammad Alifian Aqilah</p>
+                            <p><strong>Kenis Kelamin:</strong> Laki-laki</p>
+                            <p><strong>Umur:</strong> 20 tahun</p>
+                            <p><strong>Alamat:</strong> Karawang</p>
+                            <p><strong>Email:</strong> muhammadalif1213@gmail.com</p>
+                            <p><strong>Telepon:</strong> 089604639862</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="box" style="margin-left: 100px;">
+                        <h1>Masukan Data Diri Anda</h1>
+                        <form id="dataForm">
+                            <div class="form-group">
+                                <label for="nama">Nama:</label>
+                                <input type="text" id="nama" name="nama" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Jenis Kelamin:</label><br>
+                                <table style="margin-left: 27%;">
+                                    <td>
+                                        <input type="radio" id="laki" name="gender" value="Laki-laki">
+                                        <label for="laki">Laki-laki</label>
+                                    </td>
+                                    <td >
+                                        <input type="radio" id="perempuan" name="gender" value="Perempuan" style="margin-left: 90px;">
+                                <label for="perempuan" style="margin-left: 90px;">Perempuan</label>
+                                    </td>
+                                </table>
+                               
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="umur">Umur:</label>
+                                <input type="number" id="umur" name="umur" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="alamat">Alamat:</label>
+                                <textarea id="alamat" name="alamat" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telepon">Telepon:</label>
+                                <input type="tel" id="telepon" name="telepon" required>
+                            </div>
+                            <button type="button" class="button" style="color: black;" onclick="submitForm()">Submit</button>
+                        </form>
+                    </div>
+                </td>
+        </table>
+        
+
+        <div id="displayData" class="box2" style="display:none;">
+            <h1>Data Diri Anda</h1>
+            <div id="displayNama"></div>
+            <div id="displayGender"></div>
+            <div id="displayUmur"></div>
+            <div id="displayAlamat"></div>
+            <div id="displayEmail"></div>
+            <div id="displayTelepon"></div>
+        </div>
+
+    </center>
+
+    <script src="show.js"> </script>
+</body>
+</html>

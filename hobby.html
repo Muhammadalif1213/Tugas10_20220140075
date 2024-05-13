@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black; color: white;">
+    <center>
+        <nav style="text-align: center;">
+            <div class="wrapper">
+                HOBBY
+                <button class="button" style="width: 100px; height: 40px; margin-left: 1000px;"><a href="index.html">HOME</a></button>
+                <button class="button" style="width: 100px; height: 40px;"><a href="bio.html">BIODATA</a></button>
+                <button class="button" style="width: 110px; height: 40px;"><a href="me.html">ABOUT_ME</a></button>
+            </div>           
+        </nav>
+        <table style="width: auto;">
+            <td style="width: auto;">
+                <div class="container">
+                    <h1>Hobby Saya</h1>
+                    <img src="https://krs.umy.ac.id/WebAPI/FotoMhs/GetFotoByNIM/20220140075/EF6B2C87298DB05ABF9EAD9CCB92B0C11F0C1D2579E9A0BF60941731DDF9068C" alt="Foto Profil">
+                    <div class="details" style="margin-top: 30%;">
+                        <p><strong>Nama:</strong> Muhammad Alifian Aqilah</p>
+                        <p><strong>Umur:</strong> 20 tahun</p>
+                        <p><strong>Hobby:</strong> Badminton</p>
+                        <p><strong>Minat:</strong> membaca</p>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="box" style="margin-left: 100px;">
+                    <h1>Masukan Data Hobby Anda</h1>
+                    <form id="hobbyForm">
+                        <div class="form-group">
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="umur">Umur:</label>
+                            <input type="number" id="umur" name="umur" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hobi1">Hobi 1:</label>
+                            <input type="text" id="hobi1" name="hobi1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hobi2">Hobi 2:</label>
+                            <input type="text" id="hobi2" name="hobi2" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interests">Minat:</label><br>
+                        </div>
+                        <table style="margin-left: 20%;">
+                            <td>
+                                <input type="checkbox" id="membaca" name="minat" value="Membaca">
+                        <label for="membaca">Membaca</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="menulis" name="minat" value="Menulis" style="margin-left: 50px;">
+                        <label for="menulis" style="margin-left: 50px;">Menulis</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="berenang" name="minat" value="Berenang" style="margin-left: 50px;">
+                        <label for="berenang" style="margin-left: 50px;">menggambar</label>
+                            </td>
+                        </table>                                                        
+                        <button type="button" class="button" style="color: black; margin-top: 30px;" onclick="submitHobby()">Submit</button>
+                    </form>
+                </div>
+            </td>
+    </table>
+    
+
+    <div id="displayHobby" class="box2" style="display:none;">
+        <h1>Data Diri Anda</h1>
+        <div id="displayNama"></div>
+        <div id="displayUmur"></div>
+        <div id="hobbyList"></div>
+
+    </div>
+    </center>
+    <script src="show.js"> </script>
+</body>
+</html>
